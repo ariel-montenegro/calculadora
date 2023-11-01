@@ -24,7 +24,7 @@ while salir != 'si':
         resultado = calculadora.realizar_operacion(numero1, numero2, operacion) 
         calculadora.guardar_operacion(resultado, operacion)
     print(f'El resultado es: {resultado} \n')
-    respuesta = input("¿Desea continuar? [si] [no]:  ")
+    respuesta = input("¿Desea salir? [si] [no]:  ")
     salir = respuesta
 
 print('Hasta luego')
