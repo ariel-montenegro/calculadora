@@ -1,0 +1,9 @@
+
+ La suma de numero1 y numero2 es igual a 5
+ La multiplicación de numero1 y numero2 es igual a 8
+ La suma de numero1 y numero2 es igual a 3
+ La division de numero1 y numero2 es igual a 1.0
+ La suma de numero1 y numero2 es igual a 5
+ La suma de numero1 y numero2 es igual a 5
+ La suma de numero1 y numero2 es igual a 7
+ La suma de numero1 y numero2 es igual a 7
