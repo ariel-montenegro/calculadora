@@ -1,4 +1,4 @@
 
- La multiplicación de numero1 y numero2 es igual a 20
- La multiplicación de numero1 y numero2 es igual a 12
- La division de numero1 y numero2 es igual a 0.8
+ La division de 4 y 5 es igual a 0.8
+ La resta de 5 y 5 es igual a 0
+ La potencia de 4 y 5 es igual a 1024
