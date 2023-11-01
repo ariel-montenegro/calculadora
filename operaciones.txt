@@ -1,11 +1,4 @@
 
- La suma de numero1 y numero2 es igual a 5
- La multiplicación de numero1 y numero2 es igual a 8
- La suma de numero1 y numero2 es igual a 3
- La division de numero1 y numero2 es igual a 1.0
- La suma de numero1 y numero2 es igual a 5
- La suma de numero1 y numero2 es igual a 5
- La suma de numero1 y numero2 es igual a 7
- La suma de numero1 y numero2 es igual a 7
- La division de numero1 y numero2 es igual a 0.8333333333333334
  La multiplicación de numero1 y numero2 es igual a 20
+ La multiplicación de numero1 y numero2 es igual a 12
+ La division de numero1 y numero2 es igual a 0.8
