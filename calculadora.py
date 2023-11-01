@@ -21,6 +21,7 @@ class Calculadora:
         suma, resta, division, y multiplicacion
         las mismas estan definidas en el atributo
         de clase operaciones"""
+        print('\n Operaciones disponibles \n')
         for key, value in self.operaciones.items():
             print(f'[{key}] {value}')
         operacion = input('\n Seleccione la operacion a realizar:')
@@ -31,8 +32,10 @@ class Calculadora:
         resultado = str(eval(numero1 + operacion + numero2))
         return resultado
 
-    #def guardar_operacion(self, resultado, operacion):
-    #    log = open('operaciones.txt', 'a')
+    def guardar_operacion(self, resultado, operacion):
+        operacion_detalle = self.operaciones.get(operacion)
+        log = open('operaciones.txt', 'a')
+        log.writelines(f'\n La {operacion_detalle} de numero1 y numero2 es igual a {resultado}')
     
         
     
