@@ -13,17 +13,18 @@ while salir != 'si':
     try:
         int_numero1 = int(numero1)
         int_numero2 = int(numero2)
-        int_numero1 / int_numero2
     except ValueError:
         print('\n Ambos números deben ser validos \n')
         continue
-    except ZeroDivisionError:
-        print('\n El divisor no puede ser cero \n')
-        continue        
+    
     operacion = calculadora.seleccionar_operacion()
     
     if operacion not in list(calculadora.operaciones.keys()):
         print('\n Operacion no permitida \n')
+        continue
+    
+    if operacion == '/' and numero2 == '0':
+        print('\n El divisor no puede ser cero \n')
         continue
     
     resultado = calculadora.realizar_operacion(numero1, numero2, operacion) 

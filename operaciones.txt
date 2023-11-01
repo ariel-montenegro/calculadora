@@ -2,3 +2,4 @@
  La division de 4 y 5 es igual a 0.8
  La resta de 5 y 5 es igual a 0
  La potencia de 4 y 5 es igual a 1024
+ La multiplicación de 4 y 4 es igual a 16
