@@ -30,7 +30,8 @@ while salir != 'si':
     resultado = calculadora.realizar_operacion(numero1, numero2, operacion) 
     calculadora.guardar_operacion(numero1, numero2, resultado, operacion)
     print(f'\n El resultado es: {resultado} \n')
-    respuesta_operaciones = input("\n ¿Desea ver las operaciones hasta el momento? [si] [no]:  ")
+    respuesta_operaciones = input(
+        "\n ¿Desea ver las operaciones hasta el momento? [si] [no]:  ")
     if respuesta_operaciones == 'si':
         operaciones_anteriores = calculadora.mostrar_operaciones_anteriores()
         print(operaciones_anteriores)

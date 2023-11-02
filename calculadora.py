@@ -1,6 +1,9 @@
 class Calculadora:
     
-    operaciones = {'+':'suma', '-':'resta','*':'multiplicación', '/':'division', '**': 'potencia'}
+    operaciones = {'+': 'suma', '-': 'resta',
+                   '*': 'multiplicación',
+                   '/': 'division',
+                   '**': 'potencia'}
     
     @staticmethod
     def bienvenida():
@@ -35,7 +38,8 @@ class Calculadora:
     def guardar_operacion(self, numero1, numero2, resultado, operacion):
         operacion_detalle = self.operaciones.get(operacion)
         with open('operaciones.txt', 'a') as log:
-            log.writelines(f'\n La {operacion_detalle} de {numero1} y {numero2} es igual a {resultado}')
+            log.writelines(f'\n La {operacion_detalle} de {numero1} \
+                y {numero2} es igual a {resultado}')
             log.close()
     
     def mostrar_operaciones_anteriores(self):
