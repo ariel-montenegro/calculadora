@@ -1,6 +1,6 @@
 class Calculadora:
     
-    operaciones = {'+':'suma', '-':'resta','*':'multiplicación', '/':'division'}
+    operaciones = {'+':'suma', '-':'resta','*':'multiplicación', '/':'division', '**': 'potencia'}
     
     @staticmethod
     def bienvenida():
@@ -28,11 +28,8 @@ class Calculadora:
         return operacion
     
     def realizar_operacion(self, numero1, numero2, operacion):
-        """ Se realizar el calculo para retornar el resultado """
-        try:
-            resultado = str(eval(numero1 + operacion + numero2))
-        except:
-            raise("No se pudo realizar la operacion")
+        """ Se realizar el calculo para retornar el resultado """ 
+        resultado = str(eval(numero1 + operacion + numero2))
         return resultado
 
     def guardar_operacion(self, numero1, numero2, resultado, operacion):
@@ -40,7 +37,6 @@ class Calculadora:
         with open('operaciones.txt', 'a') as log:
             log.writelines(f'\n La {operacion_detalle} de {numero1} y {numero2} es igual a {resultado}')
             log.close()
-    
     
     def mostrar_operaciones_anteriores(self):
         log = open("operaciones.txt", "r") 
